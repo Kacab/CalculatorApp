@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contaner{
+    border: 2px solid pink;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out vertically */
+    align-items: center;
+    
+   
+}
+
+.all-buts{
+    
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap into multiple rows */
+    justify-content: space-between; /* Distribute space between buttons */
+    gap: 10px; /* Set the gap between buttons */
+    width: 100%; /* Make all buttons fill the available width */
+    margin-top: 10px; 
+    
+}
+
+.all-buts button {
+    flex: 1 1 calc(25% - 10px); /* Make each button take about 25% of the container width minus gap */
+    height: 40px; /* Set height for the buttons */
+    min-width: 70px; /* Minimum width for smaller screens */
+    border: 1px solid paleturquoise;
+    border-radius: 20px;
+}
